@@ -33,4 +33,10 @@ RUN npm i -g grunt-cli@1.2.0 \
     && npm i karma-chrome-launcher@2.0.0 \
     && npm i karma-jasmine@1.1.0 \
     && npm i jasmine-core@2.4.1 \
-    && npm i babel-preset-es2015@6.6.0
+    && npm i babel-preset-es2015@6.6.0 \
+    && npm i nunjucks@3.0.0 \
+    && npm i chai@3.5.0 \
+    && npm i mocha@3.2.0
+
+# Clean npm cache
+RUN npm cache clean
